@@ -16,7 +16,9 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+	loading: { color: '#3B8070' },
+
+	css: ['@/assets/sass/main.scss'],
   /*
   ** Build configuration
   */
@@ -33,6 +35,14 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
-  }
+		},
+
+		// vendor: ['axios', 'vue-instantsearch']
+	},
+
+	plugins: [
+		'~plugins/vue-instantsearch',
+		// tailwindcss('./tailwind-config.js'),
+		// require('auto-prefixer')
+	]
 }
