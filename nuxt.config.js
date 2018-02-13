@@ -1,3 +1,5 @@
+var tailwindcss = require('tailwindcss');
+
 module.exports = {
   /*
   ** Headers of the page
@@ -37,12 +39,14 @@ module.exports = {
       }
 		},
 
-		// vendor: ['axios', 'vue-instantsearch']
+		postcss: [
+			require('tailwindcss')('tailwind-config.js')
+		],
+
+		vendor: ['axios', 'vue-instantsearch']
 	},
 
 	plugins: [
-		'~plugins/vue-instantsearch',
-		// tailwindcss('./tailwind-config.js'),
-		// require('auto-prefixer')
+		'~plugins/vue-instantsearch'
 	]
 }
