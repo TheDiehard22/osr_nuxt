@@ -1,0 +1,16 @@
+.tile {
+	position: relative;
+	display: flex;
+	max-width: 1400px;
+	background-color: #fff;
+	transition: 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15) transform;
+
+	&:hover {
+		transform: translateY(-3px);
+	}
+
+	&__wrapper {
+		flex-direction: row;
+		flex-basis: 75%;
+	}
+}

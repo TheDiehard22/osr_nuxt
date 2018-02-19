@@ -1,1 +1,6 @@
-@import './tailwind.css'
+@import './tailwind.css';
+
+@import './_layout.scss';
+
+@import './components/_tile.scss';
+@import './components/_sidebar.scss';
